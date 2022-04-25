@@ -1,0 +1,2239 @@
+
+/* menu - 모든 페이지 동일 적용 */
+#menu{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    background: url("../img/01_main/section-menu/menu_bg.png") no-repeat center;
+    display: none;
+    background-size: cover;
+}
+
+#menu .close_btn{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+#menu .categoru_wrap{
+    width: 1394px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#menu .contain_01{
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu .contain_01 .category_01 .line_01{
+    position: relative;
+    top: 20px;
+    left: 60px;
+}
+
+#menu .contain_01 .category_text{
+    position: relative;
+    top: 50px;
+}
+
+#menu .contain_01 .category_02{
+    position: relative;
+    bottom: 30px;
+}
+
+#menu .contain_03{
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu .contain_03 .line_02{
+    position: relative;
+    left: 24px;
+    top: 70px;
+}
+
+#menu .contain_03 .category_05{
+    position: relative;
+    right: 112px;
+    top: 14px;
+}
+
+#menu .sub-text_wrap .text_01{
+    width: 180px;
+    margin: 50px auto;
+}
+
+#menu .sub-text_wrap .text_02{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+
+#menu .sub-text_wrap .text_03{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+#menu .bg_bottom{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+
+/* header - 모든 페이지 동일 적용 */
+#header{
+    height: 50px;
+    padding: 10px 70px 10px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    mix-blend-mode: difference;
+}
+
+#header .section-title{
+    display: flex;
+    justify-content: space-between;
+    width: 624px;
+    margin-left: 820px;
+}
+
+/* ------------------------------- */
+
+/* section01*/
+
+#section01{
+    width: 100vw;
+    height: 2034px;
+    background:url("../img/02_naverpay/section01/01_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section01 .top{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+}
+
+#section01 .main-title{
+    position: absolute;
+    left: 102px;
+    top: 224px;
+    z-index: 10;
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section01.on .main-title{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+#section01 .main-title .title{
+    margin-bottom: 50px;
+}
+#section01 .main-title .title-glass{
+    position: absolute;
+    left: 204px;
+    bottom: -30px;
+}
+#section01 .text_contain_02{
+    position: absolute;
+    left: 154px;
+    top: 722px;
+}
+
+#section01 .glass-text{
+    position: absolute;
+    top: -16px;
+    left: -454px;
+    z-index: 11;
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section01.on .glass-text{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section01 .mask{
+    position: absolute;
+    left: 50%;
+    top: 218px;
+    transform: translateX(-50%);
+    width: 860px;
+    height: 928px;
+    mask: url(../img/02_naverpay/section01/01_main_img_bg_mask.svg);
+    mask-size: cover;
+    -webkit-mask: url(../img/02_naverpay/section01/01_main_img_bg_mask.svg);
+    -webkit-mask-size: cover;
+    z-index: 20;
+}
+
+#section01 .main-img{
+    position: absolute;
+    left: 50%;
+    top: 218px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+#section01 .object-naver{
+    position: absolute;
+    top: 426px;
+    left: 160px;
+    animation: up-down 1s infinite ease-in-out alternate;
+}
+
+@keyframes up-down{
+    from{
+        transform: translatey(10px);
+    }
+    to{
+        transform: translatey(-10px);
+    }
+}
+
+
+#section01 .object-main{
+    position: absolute;
+    top: 160px;
+    right: -14px;
+}
+
+#section01 .object-bg > .object-glass{
+    overflow: hidden;
+}
+
+#section01 .text_contain_01{
+    position: absolute;
+    right: 126px;
+    top: 290px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s 0.3s;
+}
+
+#section01.on .text_contain_01{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#section01 .text_contain_01 .infor > :nth-child(1){
+    margin-bottom: 46px;
+}
+
+#section01 .text_contain_01 .text-tag{
+    margin-top: 330px;
+}
+
+
+#section01 .back-slide{
+    position: absolute;
+    top: 610px;
+    z-index: 1;
+}
+
+#section01 .back-slide > :nth-child(1){
+    margin-left: 590px;
+    margin-bottom: 20px;
+}
+
+#section01 .back-slide .up{
+    width: 3500px;
+    display: flex;
+    justify-content: space-between;
+    animation: txt01 18s infinite linear;
+}
+@keyframes txt01{
+    to{
+        transform: translateX(-3500px);
+    }
+}
+
+#section01 .back-slide .down{
+    width: 3500px;
+    display: flex;
+    justify-content: space-between;
+    animation: txt02 18s infinite linear;
+    animation-direction: reverse;
+}
+
+@keyframes txt02{
+    to{
+        transform: translateX(-3500px);
+    }
+}
+
+
+#section01 .contain_below{
+    width: 100vw;
+    position: absolute;
+    top: 1216px;
+}
+
+#section01 .sub-title{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#section01 .sub-title > .sub-title_text{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all .8s;
+}
+
+#section01 .sub-title.on > .sub-title_text{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#section01 .sub-title .sub-title_box{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 26px 0 0 54px;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.8s 0.3s;
+}
+
+#section01 .sub-title.on > .sub-title_box{
+    transform: scale(1);
+    opacity: 1;
+}
+
+#section01 .left-side{
+    position: absolute;
+    left: 134px;
+}
+
+#section01 .left-side .board_01{
+    position: absolute;
+    z-index: 5;
+    animation: up-down_01 2s infinite ease-in-out alternate;
+}
+
+@keyframes up-down_01{
+    from{
+        transform: translatey(110px);
+    }
+    to{
+        transform: translatey(-110px);
+    }
+}
+
+#section01 .left-side .line_01{
+    position: absolute;
+    left: 88px;
+    top: -1216px;
+    opacity: 15%;
+    z-index: 1;
+}
+
+#section01 .right-side{
+    position: absolute;
+    right: 312px;
+}
+
+#section01 .right-side .board_02{
+    position: absolute;
+    z-index: 5;
+    animation: up-down_02 2s infinite ease-in-out alternate;
+}
+
+@keyframes up-down_02{
+    from{
+        transform: translatey(-110px);
+    }
+    to{
+        transform: translatey(110px);
+    }
+}
+
+#section01 .right-side .line_02{
+    position: absolute;
+    top: -1216px;
+    opacity: 15%;
+    left: 92px;
+    z-index: 1;
+}
+
+#section01 .dashboard{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+#section01 .dashboard .dash-stand{
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(0);
+    transition: all 2.5s;
+}
+
+#section01 .dashboard.on .dash-stand{
+    transform: translateY(300px)  perspective(650px) rotateX(20deg);
+    opacity: 1;
+}
+
+#section01 .dashboard .dash-laydown{
+    position: absolute;
+    bottom: -386px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 3.5s 1s;
+}
+
+#section01 .dashboard.on .dash-laydown{
+    transform: translateY(-280px);
+    opacity: 0;
+}
+
+
+/* section02*/
+
+#section02{
+    width: 100vw;
+    height: 1218px;
+    background: dodgerblue;
+    background:url("../img/02_naverpay/section02/02_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section02 .chapter_title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#section02 .chapter_title .title_01{
+    position: absolute;
+    left: 50%;
+    top: 54px;
+    transform: translateX(-50%);
+}
+
+#section02 .bg{
+    width: 100vw;
+    height: 140px;
+}
+
+#section02 .mobile{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    z-index: 10;
+}
+
+#section02 .mobile .object{
+    position: absolute;
+    left: 50%;
+    top: 414px;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+#section02 .mobile .video_section{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 414px;
+    width: 540px;
+    height: 819px;
+    border-radius: 90px;
+    overflow: hidden;
+}
+
+#section02 .mobile .back{
+    position: absolute;
+    left: 50%;
+    top: 190px;
+    transform: translateX(-50%);
+}
+
+#section02 .text-slide{
+    position: absolute;
+    top: 226px;
+    width: 100vw;
+    height: 920px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#section02 .text_01{
+    margin-left: 100px;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s;
+}
+
+#section02.on .text_01{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section02 .text_02{
+    align-self: center;
+    margin-right: 446px;
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 1s 0.4s;
+}
+
+#section02.on .text_02{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section02 .text_03{
+    align-self: center;
+    margin-left: 800px;
+    opacity: 0;
+    transform: translateX(300px);
+    transition: all 1s 0.5s;
+}
+
+#section02.on .text_03{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section02 .text_04{
+    align-self: center;
+    margin-right: 260px;
+    opacity: 0;
+    transform: translateX(-500px);
+    transition: all 2s 0.4s;
+}
+
+#section02.on .text_04{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section02 .text_05{
+    align-self: end;
+    margin-right: 70px;
+    opacity: 0;
+    transform: translateX(500px);
+    transition: all 1.5s 0.7s;
+}  
+
+#section02.on .text_05{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+/* section03*/
+
+#section03{
+    width: 100vw;
+    height: 2140px;
+    background: gray;
+    background:url("../img/02_naverpay/section03/03_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section03 .work_title_01{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50px);
+    top: 80px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#section03 .work_title_01.on{
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+#section03 .work_title_01 > :nth-child(1){
+    position: relative;
+    left: 386px;
+    margin-bottom: 50px;
+}
+
+#section03 .work_title_01 .text_01{
+    position: relative;
+    right: 46px;
+}
+
+#section03 .icon_box{
+    position: absolute;
+    top: 384px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1144px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section03 .icon_box .box_01 > .icon_01{
+    position: absolute;
+    top: 38px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#section03.on .icon_box .box_01 > .icon_01{
+    opacity: 1;
+}
+
+
+#section03 .icon_box .box_02 > .icon_02{
+    position: absolute;
+    top: 38px;
+    transform: translateX(119%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#section03.on .icon_box .box_02 > .icon_02{
+    opacity: 1;
+}
+
+#section03 .icon_box .box_03 > .icon_03{
+    position: absolute;
+    top: 38px;
+    transform: translateX(150%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#section03.on .icon_box .box_03 > .icon_03{
+    opacity: 1;
+}
+
+#section03 .graph_01{
+    position: absolute;
+    left: 50%;
+    top: 742px;
+    transform: translateX(-50%);
+}
+
+#section03 .bar_section{
+    position: absolute;
+    width: 1274px;
+    height: 214px;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#section03 .bar_section .bar_01{
+    align-self: flex-start;
+}
+
+#section03 .bar_section .bar-bg_01{
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all 0.8s 0.4s;
+}
+
+#section03.on .bar_section .bar-bg_01{
+    transform: scale(1);
+}
+
+#section03 .bar_section .bar_01 > .bar-text_01{
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    opacity: 0;
+    transition: all 1s 1s;
+}
+
+#section03 .bar_section .bar_01 > .bar-text_01{
+    opacity: 1;
+    z-index: 2;
+}
+
+#section03 .bar_section .bar_02{
+    align-self: center;
+}
+
+#section03 .bar_section .bar-bg_02{
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all 0.8s 0.8s;
+}
+
+#section03.on .bar_section .bar-bg_02{
+    transform: scale(1);
+}
+
+#section03 .bar_section .bar_02 > .bar-text_02{
+    position: absolute;
+    left: 350px;
+    top: 98px;
+    opacity: 0;
+    transition: all 1s 1.4s;
+}
+
+#section03.on .bar_section .bar_02 > .bar-text_02{
+    opacity: 1;
+    z-index: 2;
+}
+
+
+#section03 .bar_section .bar_03{
+    align-self: flex-end;
+}
+
+
+#section03 .bar_section .bar-bg_03{
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all 0.8s 1.2s;
+}
+
+#section03.on .bar_section .bar-bg_03{
+    transform: scale(1);
+}
+
+
+#section03 .bar_section .bar_03 > .bar-text_03{
+    position: absolute;
+    left: 530px;
+    top: 174px;
+    opacity: 0;
+    transition: all 1s 1.8s;
+}
+
+#section03.on .bar_section .bar_03 > .bar-text_03{
+    opacity: 1;
+    z-index: 2;
+}
+
+
+#section03 .contain_02{
+    width: 1400px;
+    height: 860px;
+    position: absolute;
+    left: 50%;
+    top: 1154px;
+    transform: translateX(-50%);
+}
+
+#section03 .bg_title_01{
+    position: absolute;
+    left: 46px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+
+#section03 .bg_title_01.on{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#section03 .bg_title_01 > .title_02{
+    margin-bottom: 50px;
+}
+
+#section03 .research{
+    position: absolute;
+    left: 44px;
+    bottom: 0;
+}
+
+
+
+/* section04*/
+
+#section04{
+    width: 100vw;
+    height: 1788px;
+    background: hotpink;
+    background:url("../img/02_naverpay/section04/04_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section04 .title_section{
+    width: 1254px;
+    position: absolute;
+    left: 50%;
+    top: 102px;
+    transform: translate(-50%, 50px);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#section04 .title_section.on{
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+#section04 .title_section .title_01{
+    margin: 0 436px 60px;
+}
+
+#section04 .box_section{
+    left: 50%;
+    top: 452px;
+    position: absolute;
+    transform: translate(-50%, 100px);
+    opacity: 0;
+    transition: all .8s;
+}
+
+#section04.on .box_section{
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+
+#section04 .box_section > div{
+    margin-bottom: 24px;
+}
+
+
+
+/* section05*/
+
+#section05{
+    height: 1050px;
+    background: aqua;
+    background:url("../img/02_naverpay/section05/05_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section05 .title_section{
+    position: absolute;
+    left: 50%;
+    top: 28px;
+    transform: translateX(-50%);
+}
+
+#section05 .title_section .title_01{
+    margin: 0 496px 60px;
+}
+
+#section05 .persona_section{
+    width: 1464px;
+    height: 616px;
+    position: absolute;
+    left: 50%;
+    top: 382px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+#section05 .person_01 .opinion_01{
+    position: absolute;
+    left: 264px;
+    top: 34px;
+    opacity: 0;
+    transform: scale(0.2);
+    transition: all 0.7s;
+}
+
+#section05 .person_01 .opinion_01.on{
+    opacity: 1;
+    transform: scale(1);
+}
+
+#section05 .person_01 .down{
+    position: absolute;
+    left: 230px;
+    bottom: 4px;
+}
+
+#section05 .person_01 .emphasis_01{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 420px;
+    height: 176px;
+}
+
+#section05 .emphasis_01 .check_01{
+    align-self: flex-end;
+}
+
+#section05 .emphasis_01 .check_03{
+    align-self: center;
+    margin-left: 12px;
+}
+
+#section05 .person_02 .up{
+    margin-top: 8px;
+    margin-right: 18px;
+}
+
+#section05 .person_02 .opinion_02{
+    position: absolute;
+    right: 66px;
+    top: 32px;
+    opacity: 0;
+    transform: scale(0.2);
+    transition: all 0.7s 0.3s;
+}
+
+#section05 .person_02 .opinion_02.on{
+    opacity: 1;
+    transform: scale(1);
+}
+
+#section05 .person_02 .down{
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+}
+
+#section05 .person_02 .emphasis_02{
+    width: 346px;
+    height: 180px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#section05 .emphasis_02 .check_05{
+    align-self: flex-end;
+    margin-right: -4px;
+}
+
+#section05 .emphasis_02 .check_06{
+    margin-left: 14px;
+}
+
+
+
+/* section06*/
+
+#section06{
+    height: 2370px;
+    background: orange;
+    background:url("../img/02_naverpay/section06/06_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section06 .user-flow{
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+}
+
+#section06 .user-flow .emotion_section{
+    position: absolute;
+    left: 342px;
+    top: 344px;
+}
+
+#section06 .emotion_section .icons{
+    width: 950px;
+    height: 146px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+#section06 .emotion_section .icons > .emotion_01{
+    margin-top: 40px;
+    margin-left: 2px;
+}
+
+#section06 .emotion_section .icons > .emotion_02{
+    margin-top: 79px;
+    margin-left: 18px;
+}
+
+#section06 .emotion_section .icons > .emotion_03{
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+#section06 .emotion_section .line{
+    position: absolute;
+    left: 20px;
+    top: 24px;
+}
+
+#section06 .solution_section{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#section06 .solution_section > div{
+    margin-top: 88px;
+}
+
+#section06 .solution_section .text_01{
+    width: 1278px;
+    margin: 0 auto -36px;
+}
+
+#section06 .solution_section .problem{
+    height: 390px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#section06 .solution_section .problem .opinion_01{
+    margin-left: 48px;
+}
+
+#section06 .solution_section .problem .opinion_02{
+    align-self: flex-end;
+    margin-right: 38px;
+}
+
+#section06 .solution_section .text_02{
+    margin: 122px auto 10px;
+    width: 780px;
+}
+
+
+
+/* section07*/
+
+#section07{
+    height: 1120px;
+    background: dodgerblue;
+    background:url("../img/02_naverpay/section07/07_bg.png") no-repeat center;
+}
+
+#section07 .title_section{
+    position: absolute;
+    left: 50%;
+    top: 86px;
+    transform: translateX(-51%);
+}
+
+#section07 .title_section .title_01{
+    margin-left: -36px;
+}
+
+#section07 .title_section .title_icon{
+    position: absolute;
+    left: 382px;
+    top: 40px;
+}
+
+#section07 .title_section .title-text_01{
+    margin-top: 72px;
+}
+
+#section07 .circle{
+    position: absolute;
+    top: 520px;
+}
+
+#section07 .circle .concepts{
+    position: absolute;
+    display: flex;
+    width: 1222px;
+    justify-content: space-between;
+    left: 376px;
+    top: 170px;
+}
+
+#section07 .concepts .concept_02{
+    margin-left: 100px;
+}
+
+#section07 .concepts .concept_03{
+    margin-left: 28px;
+}
+
+#section07 .texts{
+    width: 1296px;
+    position: absolute;
+    bottom: 84px;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#section07 .texts .text_02{
+    margin-left: -12px;
+}
+
+#section07 .texts .text_03{
+    margin-left: -22px;
+}
+
+#section07 .texts .text_04{
+    margin-right: -8px;
+}
+
+
+
+
+/* section08*/
+
+#section08{
+    height: 1364px;
+    background: gray;
+    background:url("../img/02_naverpay/section08/08_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section08 .title_section{
+    position: absolute;
+    left: 50%;
+    top: 86px;
+    transform: translateX(-50%);
+}
+
+#section08 .title_section .title_01{
+    width: 590px;
+    margin: 0px 320px 50px 390px;
+}
+
+#section08 .features_section{
+    position: absolute;
+    left: 304px;
+    top: 432px;
+}
+
+#section08 .icons{
+    width: 1258px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 58px;
+    align-items: flex-end;
+}
+
+#section08 .icons .icon_02{
+    margin-left: 64px;
+}
+
+#section08 .icons .icon_03{
+    margin-left: 8px;
+}
+
+#section08 .line{
+    position: absolute;
+    left: -122px;
+    top: 104px;
+}
+
+#section08 .boxs{
+    width: 1436px;
+    position: absolute;
+    display: flex;
+    top: 186px;
+    left: -62px;
+    justify-content: space-between;
+}
+
+
+/* section09*/
+
+#section09{
+    height: 3866px;
+    background: hotpink;
+    background:url("../img/02_naverpay/section09/09_bg.png") no-repeat center;
+}
+
+#section09 .title_section{
+    position: absolute;
+    left: 50%;
+    top: 114px;
+    transform: translateX(-50%);
+}
+
+#section09 .title_01{
+    width: 636px;
+    margin: 0 318px 50px 346px;
+}
+
+#section09 .user-flow{
+    height: 1944px;
+    position: absolute;
+    top: 546px;
+    left: 228px;
+}
+
+#section09 .flow{
+    position: absolute;
+    z-index: 2;
+}
+
+#section09 .flow_02{
+    margin-left: 214px;
+    margin-top: 73px;
+}
+
+#section09 .flow_03{
+    margin-left: 194px;
+    margin-top: 84px;
+}
+
+#section09 .flow_04{
+    margin-left: 204px;
+    margin-top: 68px;
+}
+
+#section09 .flow_05{
+    margin-left: 216px;
+    margin-top: 96px;
+}
+
+#section09 .flow_line{
+    position: absolute;
+    top: 250px;
+    left: 290px;
+}
+
+#section09 .flow_line > .flow_line_02{
+    margin-top: 50px;
+}
+
+#section09 .flow_line > .flow_line_03{
+    margin-top: 40px;
+}
+
+#section09 .flow_line > .flow_line_04{
+    margin-top: 20px;
+}
+
+
+#section09 .wire-frame{
+    position: absolute;
+    bottom: 137px;
+    right: 92px;
+}
+
+
+
+
+
+
+/* section10*/
+
+#section10{
+    height: 1590px;
+    background: aqua;
+    background:url("../img/02_naverpay/section10/10_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section10 .chapter_text{
+    position: absolute;
+    left: 50%;
+    top: 54px;
+    transform: translateX(-50%);
+}
+
+#section10 .title_section{
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    transform: translateX(-50%);
+}
+
+#section10 .title_section .title_01{
+    margin: 0 290px 50px 422px;
+}
+
+#section10 .mockup_section{
+    width: 812px;
+    height: 800px;
+    position: absolute;
+    left: 224px;
+    top: 698px;
+}
+
+#section10 .mockup_section > .cards{
+    position: absolute;
+    left: -22px;
+    top: 306px;
+    z-index: 3;
+}
+
+#section10 .mockup_section .mobile_01{
+    position: absolute;
+    left: 248px;
+    z-index: 2;
+}
+
+#section10 .mockup_section .mobile_02{
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 50px;
+}
+
+#section10 .graphic_style{
+    position: absolute;
+    right: 366px;
+    top: 672px;
+}
+
+#section10 .graphic_style .logo_sample{
+    position: absolute;
+    left: 72px;
+    top: 258px;
+}
+
+#section10 .design_style{
+    position: absolute;
+    right: 312px;
+    bottom: 88px;
+}
+
+#section10 .design_style .line{
+    position: absolute;
+    right: 579px;
+    top: 4px;
+}
+
+
+
+/* section11*/
+
+#section11{
+    height: 1880px;
+    background: gray;
+    background:url("../img/02_naverpay/section11/11_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section11 .title_section{
+    position: absolute;
+    left: 302px;
+    top: 109px;
+}
+
+#section11 .title_section .title_01{
+    margin-bottom: 50px;
+}
+
+#section11 .contain_01{
+    width: 1350px;
+    height: 722px;
+    position: absolute;
+    left: 352px;
+    top: 252px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section11 .intro_info{
+    margin-top: 260px;
+}
+
+#section11 .onboarding_mockup{
+    display: flex;
+    width: 744px;
+    justify-content: space-between;
+}
+
+#section11 .contain_02{
+    position: absolute;
+    bottom: 46px;
+    left: 342px;
+    display: flex;
+}
+
+#section11 .step_section{
+    width: 722px;
+    height: 550px;
+    position: relative;
+    left: 210px;
+    top: 120px;
+}
+
+#section11 .step_section .upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+#section11 .step_section .step_02{
+    margin-right: 30px;
+}
+
+#section11 .step_section .icon_01{
+    position: absolute;
+    right: 6px;
+}
+
+#section11 .step_section .step_03{
+    position: absolute;
+    bottom: -15px;
+}
+
+#section11 .step_section .icon_02{
+    position: relative;
+    left: 310px;
+    bottom: 16px;
+}
+
+
+
+
+
+
+/* section12*/
+
+#section12{
+    height: 1790px;
+    background: hotpink;
+    background:url("../img/02_naverpay/section12/12_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section12 .title_section{
+    position: absolute;
+    right: 396px;
+    top: 56px;
+}
+
+#section12 .title_icon_01{
+    position: absolute;
+    right: 130px;
+    top: 34px;
+}
+
+#section12 .title_01{
+    margin-bottom: 60px;
+}
+
+#section12 .object_section{
+    position: absolute;
+    left: 160px;
+    top: 237px;
+}
+
+#section12 .object_section .text_01{
+    position: absolute;
+    top: 142px;
+}
+
+#section12 .object_section .circles{
+    position: absolute;
+    top: 146px;
+    left: 410px;
+}
+
+#section12 .circle_01{
+    margin-left: 141px;
+}
+
+#section12 .circle_02{
+    margin-top: 26px;
+}
+
+#section12 .circle_03{
+    position: absolute;
+    right: -70px;
+    top: 146px;
+}
+
+#section12 .font_section{
+    width: 1480px;
+    position: absolute;
+    left: 50%;
+    top: 830px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+#section12 .font_style{
+    position: absolute;
+    bottom: 88px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+/* section13*/
+
+#section13{
+    height: 2230px;
+    background: aqua;
+    background:url("../img/02_naverpay/section13/13_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section13 .title_section{
+    position: absolute;
+    top: 78px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#section13 .title_01{
+    margin: 0 526px 60px 490px;
+}
+
+#section13 .mobiles{
+    position: absolute;
+    left: -166px;
+    top: 550px;
+    display: flex;
+    z-index: 10;
+}
+
+#section13 .mobile_02{
+    margin-top: 82px;
+    margin-left: -10px;
+}
+
+#section13 .mobile_04{
+    margin-top: 82px;
+    margin-left: -6px;
+}
+
+#section13 .texts{
+    width: 1046px;
+    height: 162px;
+    position: absolute;
+    left: 324px;
+    bottom: 691px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section13 .text_01{
+    align-self: flex-end;
+}
+
+#section13 .text_02{
+    margin-right: 70px;
+}
+
+#section13 .text_03{
+    align-self: center;
+    margin-top: 62px;
+}
+
+#section13 .sub-text_section{
+    position: absolute;
+    left: 454px;
+    bottom: 224px;
+}
+
+#section13 .sub-text_section .icon{
+    margin-top: 29px;
+    margin-left: 194px;
+}
+
+#section13 .circle_01{
+    position: absolute;
+    right: -380px;
+    bottom: 154px;
+    z-index: 1;
+}
+
+#section13 .circle_02{
+    position: absolute;
+    left: 1022px;
+    top: 800px;
+    z-index: 1;
+}
+
+#section13 .circle_03{
+    position: absolute;
+    left: 372px;
+    top: 150px;
+    z-index: 1;
+}
+
+
+
+
+
+/* section14*/
+
+#section14{
+    height: 1320px;
+    background: aqua;
+    background:url("../img/02_naverpay/section14/14_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section14 .title_object{
+    position: absolute;
+    left: 240px;
+    top: 214px;
+}
+
+#section14 .circle{
+    position: absolute;
+    top: 120px;
+    z-index: 5;
+}
+
+#section14 .object_section{
+    position: absolute;
+    left: 230px;
+    top: 134px;
+    z-index: 3;
+}
+
+#section14 .object_section > div{
+    margin-bottom: 24px;
+}
+
+#section14 .object_section .object_02{
+    position: relative;
+    top: -10px;
+    left: 54px;
+}
+
+#section14 .object_section .object_03{
+    position: relative;
+    left: 54px;
+    top: 4px;
+}
+
+#section14 .object_box{
+    position: absolute;
+    left: -8px;
+    top: 4px;
+    z-index: 1;
+}
+
+#section14 .title_section{
+    position: absolute;
+    right: 366px;
+    top: 214px;
+}
+
+#section14 .title_section .title_01{
+    margin-left: -28px;
+    margin-bottom: 50px;
+}
+
+#section14 .colour-chip_section{
+    position: absolute;
+    left: 50%;
+    bottom: 116px;
+    transform: translateX(-50%);
+}
+
+#section14 .mask{
+    position: relative;
+    top: 338px;
+    left: 0px;
+    mask: url(../img/02_naverpay/section14/14_colour_mask.svg);
+    mask-size: cover;
+    -webkit-mask: url(../img/02_naverpay/section14/14_colour_mask.svg);
+    -webkit-mask-size: cover;
+    z-index: 10;
+}
+
+#section14 .mask_01{
+    position: relative;
+    top: -74px;
+    left: 16px;
+}
+
+#section14 .glass{
+    position: relative;
+    top: 167px;
+    z-index: 1;
+}
+
+#section14 .colour-chip{
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -58px;
+    left: 52px;
+}
+
+#section14 .colour-chip .circle{
+    position: absolute;
+    left: 26px;
+    top: 122px;
+    z-index: 2;
+}
+
+
+#section14 .texts{
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    left: 46px;
+    top: -12px;
+    z-index: 10;
+}
+
+#section14 .texts .text_02{
+    margin-left: -14px;
+}
+
+#section14 .texts .text_03{
+    margin-top: 12px;
+}
+
+#section14 .texts .text_04{
+    position: relative;
+    top: 12px;
+}
+
+
+
+
+
+
+/* section15*/
+
+#section15{
+    height: 3260px;
+    background: aqua;
+    background:url("../img/02_naverpay/section15/15_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section15 .title_section{
+    position: absolute;
+    top: 136px;
+    left: 310px;
+}
+
+#section15 .title_section .title_01{
+    margin-bottom: 50px;
+}
+
+#section15 .payment_section{
+    position: absolute;
+    left: 420px;
+    top: 596px;
+}
+
+#section15 .card_section{
+    position: absolute;
+    z-index: 5;
+}
+
+#section15 .line{
+    position: absolute;
+    top: 336px;
+}
+
+#section15 .text_01{
+    position: absolute;
+    top: 666px;
+    left: 30px;
+}
+
+#section15 .cards{
+    width: 298px;
+    position: absolute;
+    top: 226px;
+    left: 153px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+#section15 .cards .card_01{
+    margin-bottom: -8px;
+}
+
+#section15 .mockup_01{
+    width: 1216px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 348px;
+    z-index: 2;
+}
+
+#section15 .recipt_section{
+    position: absolute;
+    bottom: 70px;
+}
+
+#section15 .mobile_04{
+    position: absolute;
+    left: 164px;
+    bottom: 698px;
+    z-index: 10;
+}
+
+#section15 .recipt_object{
+    position: absolute;
+    bottom: 720px;
+    left: 124px;
+}
+
+#section15 .recipt_object .recipt_01{
+    position: absolute;
+    top: -290px;
+    left: 250px;
+    z-index: 1;
+}
+
+#section15 .recipt_object .recipt_02{
+    position: absolute;
+    z-index: 2;
+}
+
+#section15 .store-logo{
+    width: 860px;
+    position: absolute;
+    bottom: 280px;
+    left: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section15 .logo_01{
+    margin-top: 50px;
+}
+
+#section15 .step_section{
+    width: 770px;
+    height: 1288px;
+    position: absolute;
+    right: 150px;
+    bottom: 422px;
+}
+
+#section15 .step_section .icon{
+    margin-bottom: 40px;
+    margin-left: 16px;
+}
+
+#section15 .sub-text{
+    margin-bottom: 80px;
+}
+
+#section15 .sub-mobile{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 24px;
+    margin-bottom: 88px;
+}
+
+#section15 .mobile_05{
+    margin-left: -8px;
+}
+
+#section15 .steps{
+    justify-content: space-between;
+    display: flex;
+    margin-left: 6px;
+}
+
+#section15 .steps .step_02{
+    margin-right: 4px;
+}
+
+
+
+
+
+/* section16*/
+
+#section16{
+    height: 4280px;
+    background: aqua;
+    background:url("../img/02_naverpay/section16/16_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section16 .title_section{
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+}
+
+#section16 .title_section .title_01{
+    margin: 0 124px 50px 146px;
+}
+
+#section16 .mockup-uppper{
+    width: 1534px;
+    position: absolute;
+    left: 50%;
+    top: 760px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+#section16 .mockup-uppper .mobile_01{
+    margin-top: 482px;
+}
+
+#section16 .mockup-uppper .mobile_02{
+    height: 2110px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section16 .mockup-uppper .mobile_02 .object_01{
+    margin-bottom: 50px;
+}
+
+#section16 .mockup-uppper .mobile_03{
+    margin-top: 734px;
+    height: 1864px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section16 .mockup-down{
+    width: 1000px;
+    height: 1246px;
+    position: absolute;
+    left: 179px;
+    bottom: 212px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section16 .mockup-down .mobile_05{
+    align-self: flex-end;
+}
+
+
+
+/* section17*/
+
+#section17{
+    height: 4062px;
+    background: aqua;
+    background:url("../img/02_naverpay/section17/17_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section17 .title_section{
+    position: absolute;
+    left: 306px;
+    top: 102px;
+}
+
+#section17 .title_section .title_01{
+    margin-bottom: 44px;
+}
+
+#section17 .sub-object{
+    position: absolute;
+    right: 240px;
+    top: 556px;
+}
+
+#section17 .mockup-uppper{
+    width: 1462px;
+    position: absolute;
+    left: 50%;
+    top: 962px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+#section17 .mobile_01 .logos{
+    height: 178px;
+    position: relative;
+    bottom: 230px;
+    left: 446px;
+}
+
+#section17 .mobile_01 .logo_02{
+    position: absolute;
+    left: 76px;
+    bottom: 70px;
+}
+
+#section17 .mobile_01 .logo_03{
+    position: absolute;
+    left: 172px;
+    top: 12px;
+}
+
+#section17 .mobile_01 .logo_04{
+    position: absolute;
+    left: 272px;
+    bottom: 30px;
+}
+
+#section17 .mobile_01 .logo_05{
+    position: absolute;
+    right: 6px;
+    top: -24px;
+}
+
+#section17 .mobile_01 .logo_06{
+    position: absolute;
+    right: -26px;
+    top: 4px;
+}
+
+#section17 .mobile_01 .logo_07{
+    position: absolute;
+    right: -154px;
+    bottom: 26px;
+}
+
+#section17 .mobile_01 .logo_08{
+    position: absolute;
+    right: -212px;
+    bottom: 66px;
+}
+
+#section17 .mobile_02 .text_01{
+    margin-top: 100px;
+    margin-left: 54px;
+}
+
+#section17 .mobile_03 .text_02{
+    margin-top: 100px;
+    margin-left: 54px;
+}
+
+
+#section17 .mockup-down{
+    width: 1100px;
+    height: 1280px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    bottom: 162px;
+    transform: translateX(-50%);
+}
+
+#section17 .mockup-down .mobile_04{
+    align-self: flex-end;
+}
+
+#section17 .mobile_05 .text_03{
+    margin-top: 100px;
+    margin-left: 66px;
+}
+
+
+
+
+/* section18*/
+
+#section18{
+    height: 1140px;
+    background: aqua;
+    background:url("../img/02_naverpay/section18/18_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section18 .title_section{
+    position: absolute;
+    left: 50%;
+    top: 72px;
+    transform: translateX(-50%);
+}
+
+#section18 .title_section .title_01{
+    margin-left: 60px;
+    margin-bottom: 32px;
+}
+
+#section18 .icon_section{
+    position: relative;
+    top: 413px;
+    margin: 0 auto;
+    width: 1506px;
+    height: 576px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section18 .icon_section .together{
+    display: flex;
+    align-self: flex-end;
+}
+
+#section18 .together .icon_02{
+    position: relative;
+    left: 24px;
+    z-index: 2;
+}
+
+#section18 .together .icon_03{
+    position: relative;
+    right: 118px;
+    bottom: 90px;
+}
+
+#section18 .icon_section .icon_04{
+    align-self: flex-end;
+    position: relative;
+    right: 96px;
+    bottom: 64px;
+}
+
+#section18 .icon_section .icon_05{
+    position: relative;
+    right: 62px;
+    top: 70px;
+}
+
+
+
+/* section19*/
+
+#section19{
+    height: 2950px;
+    background: aqua;
+    background:url("../img/02_naverpay/section19/19_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section19 .title_section{
+    position: absolute;
+    left: 310px;
+    top: 236px;
+}
+
+#section19 .title_section .title_01{
+    margin-bottom: 40px;
+}
+
+#section19 .mockup_section{
+    width: 1464px;
+    height: 2600px;
+    position: relative;
+    top: 274px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+#section19 .mockup_section .mockup_01{
+    align-self: center;
+    position: relative;
+    top: 180px;
+}
+
+#section19 .mockup_section .mockup_02{
+    align-self: flex-end;
+}
+
+#section19 .mockup_02 .mobile_02{
+    margin-bottom: 120px;
+}
+
+#section19 .mockup_03 .mobile_04{
+    margin-bottom: 124px;
+}
+
+#section19 .back-slide{
+    position: absolute;
+    top: 862px;
+    z-index: 1;
+}
+
+#section19 .back-slide .text_01{
+    margin-left: 440px;
+    margin-bottom: 194px;
+}
+
+/* section20*/
+
+#section20{
+    height: 2522px;
+    background: aqua;
+    background:url("../img/02_naverpay/section20/20_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+#section20 .mobiles{
+    position: absolute;
+    top: -516px;
+    left: -341px;
+    opacity: 70%;
+}
+
+#section20 .text{
+    position: absolute;
+    left: 50%;
+    bottom: 288px;
+    transform: translateX(-50%);
+}
+
+#section20 .icons{
+    width: 1150px;
+    height: 256px;
+    position: absolute;
+    left: 50%;
+    bottom: 184px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(-51%);
+}
+
+#section20 .icons .icon_02{
+    margin-top: 124px;
+}
+
+
+
+
+
+
