@@ -413,6 +413,7 @@
     top: 128px;
     opacity: 45%;
     z-index: 2;
+    display: none;
 }
 
 /* dot-position */
