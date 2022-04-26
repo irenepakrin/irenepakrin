@@ -34,6 +34,8 @@ window.addEventListener('DOMContentLoaded', function () {
     let scrollTop = container.scrollTop;
      $('.posNum').html(scrollTop)
 
+     $('.rotate').css('transform',`rotate(${scrollTop * 0.3}deg)`)
+
     //  gsap.to('.fix-this-0', {
     //     scrollTrigger: {
     //         trigger: ".trigger-this-0",

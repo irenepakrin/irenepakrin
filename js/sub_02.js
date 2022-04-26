@@ -37,6 +37,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
+        $('.rotate').css('transform',`rotate(${scrollTop * 0.3}deg)`)
+
+
+
 
 
 
@@ -126,3 +130,33 @@ window.addEventListener('DOMContentLoaded', function () {
 })
 
 
+ // 페이지가 새로 리로드 될때만 실행
+ var top_space = 0;
+ if ($('#header').length) {
+   top_space = $('#header').outerHeight();
+ }  //해더에 바가 있는 경우 오프셋 하는 경우 필요
+
+
+ var hash = window.location.hash;
+ if (hash && document.getElementById(hash.slice(1))) { // #값이 있을때만 실행됨
+   var $this = $(hash);
+   $('html, body').animate({
+     scrollTop: $this.offset().top - top_space
+   }, 0, 'easeInOutExpo', function () {
+     window.history.pushState ? window.history.pushState(null, null, hash) : window.location.hash = hash;
+   });
+ }
+ 
+ $('.section03').on('click', function() {
+   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+     var target = $(this.hash);
+     if (target.length) {
+
+       $('html, body').animate({
+         scrollTop: target.offset().top - top_space
+       }, 0, 'easeOutCubic'); //숫자는 스크롤 되는 시간, ease머시기는 효과
+
+       return false;
+     }
+   }
+ });

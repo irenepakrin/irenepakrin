@@ -37,6 +37,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
+        $('.rotate').css('transform',`rotate(${scrollTop * 0.3}deg)`)
+
+
+
 
 
 
