@@ -423,7 +423,7 @@
     height: 100vh;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 50px;
     z-index: 10;
 }
 
@@ -473,7 +473,7 @@
 #section01 .dot-wrap_08{
     position: relative;
     left: 26vw;
-    top: 72vh;
+    top: 74vh;
 }
 
 #section01 .dot-wrap_09{
@@ -484,8 +484,8 @@
 
 #section01 .dot-wrap_10{
     position: relative;
-    left: 89vw;
-    top: 68vh;
+    left: 84vw;
+    top: 76vh;
 }
 
 /* dot-hover */
