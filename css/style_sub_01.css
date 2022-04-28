@@ -129,7 +129,7 @@
 #section01 .top{
     position: absolute;
     left: 50%;
-    top: 50px;
+    top: 34px;
     transform: translateX(-50%);
 }
 
