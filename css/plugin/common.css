@@ -53,3 +53,15 @@
     z-index: 9999;
     display: none;
 }
+
+
+/* font */
+
+@font-face { font-family: 'Montserrat'; font-weight: 300; src: url('../../font/Montserrat-VariableFont_wght.ttf') format('truetype'); }
+
+@font-face { font-family: 'Ogg'; font-weight: 500; src: url('../../font/OggRegular.ttf') format('truetype'); }
+
+@font-face { font-family: 'SF_Pro_Display'; font-weight: 900; src: url('../../font/SF-Pro-Display-Bold.otf') format('truetype'); }
+@font-face { font-family: 'SF_Pro_Display'; font-weight: 700; src: url('../../font/SF-Pro-Display-Semibold.otf') format('truetype'); }
+@font-face { font-family: 'SF_Pro_Display'; font-weight: 500; src: url('../../font/SF-Pro-Display-Regular.otf') format('truetype'); }
+@font-face { font-family: 'SF_Pro_Display'; font-weight: 300; src: url('../../font/SF-Pro-Display-Light.otf') format('truetype'); }
