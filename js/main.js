@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function () {
 
         
-    $('#header > .menu > img').click(function(){
+    $('#header > .gnb > ul > .menu > img').click(function(){
         console.log('이미지클릭')
         $("#menu").fadeIn();
     });
